@@ -3,7 +3,8 @@ import React from 'react'
 const home = () => {
   return (
     <>
-      <center><div id='home' className='hero' style={{backgroundImage:"url(/Images/2825704.gif)",backgroundRepeat:"no-repeat",backgroundSize:"cover",height:"100vh",width:"100%"}} >
+      <center><div id='home' className='hero' style={{boxShadow:"0px 0px 100px blue inset"
+      ,backgroundImage:"url(https://steamuserimages-a.akamaihd.net/ugc/1661224712069230981/BFD6A13BBBF6F1A2A7FA6A6DA961E0700E98660A/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true)",backgroundRepeat:"no-repeat",backgroundSize:"cover",height:"100vh",width:"100%"}} >
        <div className=' position-relative top-50 text-white border-3 border-dark'  data-aos="fade-zoom-in"
      data-aos-easing="ease-in-back"
      data-aos-delay="400"
