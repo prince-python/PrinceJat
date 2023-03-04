@@ -1,0 +1,44 @@
+import React from 'react'
+
+const Projecsts = () => {
+  return (
+    <>
+      <center><div className='p-4 container-fluid bg-primary rounded-4 w-75 ' id='social'>
+      <center><div className='container-fluid p-4 bg-primary rounded-4 mb-5'  style={{boxShadow:"0px 0px 50px black"}}>
+            <span data-aos="zoom-out-left" className='text-white  '>STAY CONNECTED WITH ME</span>
+        </div></center>
+       <div className="row  ">
+ <div className="col-sm-6 rounded-4 border border-dark p-3 bg-primary" data-aos="zoom-out"  style={{minHeight: "400px",boxShadow:"0px 0px 50px black"}}  >
+     <a href="https:www.youtube.com/channel/UCyUGNzzEY0xYyWux5aPOGow"><img className="position-relative rounded-5 p-2 w-75  h-100" style={{boxShadow:"0px 0px 50px black"}} src="https:cdn.dribbble.com/users/1003944/screenshots/4881161/2.gif" alt="" /></a>
+     </div>
+     <div className="col-sm-6 rounded-4 border border-dark bg-primary p-3" data-aos="zoom-out"  style={{minHeight: "400px",boxShadow:"0px 0px 50px black"}}>
+     <a href="https:github.com/prince-python"><img className="position-relative rounded-5 p-2 w-75  h-100" style={{boxShadow:"0px 0px 50px black"}} src="https:cdn.dribbble.com/users/420183/screenshots/2875637/octocat_github.gif" alt="" /></a>
+     </div>
+ </div>
+ <div className="row ">
+     <div className="col-sm-6 bg-primary rounded-4 border border-dark p-3" data-aos="zoom-out" style={{ minHeight: "400px",boxShadow:"0px 0px 50px black"}}>
+         <a href="https:www.linkedin.com/in/prince-chaudhary-61a17b240/"><img className="position-relative rounded-5 p-2 w-75  h-100" style={{boxShadow:"0px 0px 50px black"}}  src="https:cdn.dribbble.com/users/1331/screenshots/2741497/linked.gif"
+          alt="" /></a>
+     </div>
+     <div className="col-sm-6  bg-primary rounded-4 border border-dark p-3" data-aos="zoom-out" style={{ minHeight: "400px",boxShadow:"0px 0px 50px black"}}>
+         <a href="https:www.linkedin.com/in/prince-chaudhary-61a17b240/"><img className="position-relative rounded-5 p-2 w-75  h-100" style={{boxShadow:"0px 0px 50px black"}}  src="https:techcrunch.com/wp-content/uploads/2014/06/twitter-rise.gif?w=730&crop=1"
+          alt="" /></a>
+     </div>
+  
+   <div
+     className="container rounded-4  mt-5 bg-primary  mb-5"
+     data-aos="zoom-out"
+     style={{ letterSpacing: "1px" ,boxShadow:"0px 0px 50px black" }}
+   
+   >
+     <a className='text-white position-relative' style={{textDecoration: "none"}} href="https:drive.google.com/file/d/16HV4GRa41GPSU6QJwa6ilmB8uZzpPhhp/view?usp=sharing"> DOWNLOAD MY RESUME</a>
+   </div>
+   
+</div>
+</div></center>
+
+    </>
+  )
+}
+
+export default Projecsts
