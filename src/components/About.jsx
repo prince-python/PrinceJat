@@ -46,7 +46,7 @@ const About = () => {
      </div>
  </div>
  <div className='col-12 mt-5 rounded-4 p-2'data-aos="zoom-out-right"  style={{boxShadow:"0px 0px 100px black"}}>
-    <img src="Images/full-stack-development.gif" className='rounded-5' style={{height:"70vh",width:"100%"}} alt="" />
+    <img src="https://www.wingstechsolutions.com/wp-content/uploads/2022/03/full-stack-development.gif" className='rounded-5' style={{height:"70vh",width:"100%"}} alt="" />
  </div>
  
  </div>

@@ -9,10 +9,13 @@ const Projecsts = () => {
         </div></center>
        <div className="row  ">
  <div className="col-sm-6 rounded-4 border border-dark p-3 bg-primary" data-aos="zoom-out"  style={{minHeight: "400px",boxShadow:"0px 0px 50px black"}}  >
-     <a href="https:www.youtube.com/channel/UCyUGNzzEY0xYyWux5aPOGow"><img className="position-relative rounded-5 p-2 w-75  h-100" style={{boxShadow:"0px 0px 50px black"}} src="https:cdn.dribbble.com/users/1003944/screenshots/4881161/2.gif" alt="" /></a>
+     <a href="https:www.youtube.com/channel/UCyUGNzzEY0xYyWux5aPOGow"><img className="position-relative rounded-5 p-2 w-75  h-100"
+      style={{boxShadow:"0px 0px 50px black"}}
+       src="https://cdn.dribbble.com/users/1003944/screenshots/4881161/media/1b1ff19d00e1e457f50d0b58a27f478b.gif" alt="" /></a>
      </div>
      <div className="col-sm-6 rounded-4 border border-dark bg-primary p-3" data-aos="zoom-out"  style={{minHeight: "400px",boxShadow:"0px 0px 50px black"}}>
-     <a href="https:github.com/prince-python"><img className="position-relative rounded-5 p-2 w-75  h-100" style={{boxShadow:"0px 0px 50px black"}} src="https:cdn.dribbble.com/users/420183/screenshots/2875637/octocat_github.gif" alt="" /></a>
+     <a href="https:github.com/prince-python"><img className="position-relative rounded-5 p-2 w-75  h-100" style={{boxShadow:"0px 0px 50px black"}}
+      src="https://cdn.dribbble.com/users/420183/screenshots/2875637/media/6f6b33ec231d5e00a16ff538c41d640b.gif" alt="" /></a>
      </div>
  </div>
  <div className="row ">

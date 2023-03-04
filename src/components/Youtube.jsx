@@ -3,7 +3,7 @@ import React from 'react'
 const Youtube = () => {
   return (
     <>
-    <center><div className='p-4 container-fluid bg-primary rounded-4 w-75 ' >
+    <center><div className='p-4 container-fluid bg-primary rounded-4 w-75 ' id='hobbies' >
      
        <div className="row  ">
  <div className="col-sm-6 rounded-4 border border-dark p-5 bg-primary" data-aos="zoom-out"  style={{minHeight: "400px",boxShadow:"0px 0px 50px black"}}  >
