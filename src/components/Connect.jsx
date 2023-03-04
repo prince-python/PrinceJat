@@ -20,11 +20,13 @@ const Projecsts = () => {
  </div>
  <div className="row ">
      <div className="col-sm-6 bg-primary rounded-4 border border-dark p-3" data-aos="zoom-out" style={{ minHeight: "400px",boxShadow:"0px 0px 50px black"}}>
-         <a href="https:www.linkedin.com/in/prince-chaudhary-61a17b240/"><img className="position-relative rounded-5 p-2 w-75  h-100" style={{boxShadow:"0px 0px 50px black"}}  src="https:cdn.dribbble.com/users/1331/screenshots/2741497/linked.gif"
+         <a href="https:www.linkedin.com/in/prince-chaudhary-61a17b240/"><img className="position-relative rounded-5 p-2 w-75  h-100" 
+         style={{boxShadow:"0px 0px 50px black"}}  src="https://cdn.dribbble.com/users/1331/screenshots/2741497/media/d65dc6885648a57d4dbf166bc205fb86.gif"
           alt="" /></a>
      </div>
      <div className="col-sm-6  bg-primary rounded-4 border border-dark p-3" data-aos="zoom-out" style={{ minHeight: "400px",boxShadow:"0px 0px 50px black"}}>
-         <a href="https:www.linkedin.com/in/prince-chaudhary-61a17b240/"><img className="position-relative rounded-5 p-2 w-75  h-100" style={{boxShadow:"0px 0px 50px black"}}  src="https:techcrunch.com/wp-content/uploads/2014/06/twitter-rise.gif?w=730&crop=1"
+         <a href="https:www.linkedin.com/in/prince-chaudhary-61a17b240/"><img className="position-relative rounded-5 p-2 w-75  h-100" style={{boxShadow:"0px 0px 50px black"}}
+           src="https://techcrunch.com/wp-content/uploads/2014/06/twitter-rise.gif?w=1390&crop=1"
           alt="" /></a>
      </div>
   
