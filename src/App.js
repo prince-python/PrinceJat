@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import Youtube from './components/Youtube';
 import Nav from './components/Nav';
+import Contact from './components/Contact';
 import { useEffect, useState } from 'react';
 import Loading from './components/Loading';
 
@@ -17,7 +18,7 @@ const App = () => {
     {
       setloading(false)
 
-    },4000)
+    },2000)
 
   },[])
   return (
@@ -35,6 +36,7 @@ const App = () => {
       <Section/>
       <Youtube/>
       <Connect/>
+      <Contact/>
       </div>
       </div>
       
