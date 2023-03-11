@@ -8,7 +8,7 @@ const section = () => {
     <>
     <center>
 
-        <div className="container-fluid bg-primary mb-5  border border-primary  rounded-4 text-black w-75   p-5 " style={{width:"90%"}}  >
+        <div className="container-fluid bg-primary   border border-primary  rounded-4 text-black w-75   p-5 " style={{width:"90%"}}  >
            
             <div className="container-fluid"   id="s" data-aos="zoom-out" >
         <center><div className='container-fluid p-4 bg-primary rounded-4 mb-5'  style={{boxShadow:"0px 0px 50px black"}}>

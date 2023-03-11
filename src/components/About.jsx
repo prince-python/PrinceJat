@@ -49,18 +49,7 @@ const About = () => {
     <img src="https://www.wingstechsolutions.com/wp-content/uploads/2022/03/full-stack-development.gif" className='rounded-5' style={{height:"70vh",width:"100%"}} alt="" />
  </div>
  
- </div>
-
-
-
-
-
-
-
-
-
-
-    </div></center>
+ </div></div></center>
        </>
   )
 }
