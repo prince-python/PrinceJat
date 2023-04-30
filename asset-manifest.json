@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PrinceJat/static/css/main.fa4071bd.css",
+    "main.js": "/PrinceJat/static/js/main.9c0837f7.js",
+    "static/js/787.55ef13f9.chunk.js": "/PrinceJat/static/js/787.55ef13f9.chunk.js",
+    "index.html": "/PrinceJat/index.html",
+    "main.fa4071bd.css.map": "/PrinceJat/static/css/main.fa4071bd.css.map",
+    "main.9c0837f7.js.map": "/PrinceJat/static/js/main.9c0837f7.js.map",
+    "787.55ef13f9.chunk.js.map": "/PrinceJat/static/js/787.55ef13f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa4071bd.css",
+    "static/js/main.9c0837f7.js"
+  ]
+}
