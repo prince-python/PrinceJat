@@ -3,7 +3,7 @@ import React from 'react'
 const Projecsts = () => {
   return (
     <>
-      <center><div className='p-4 container-fluid bg-primary rounded-4 w-75 ' id='social'>
+      <center><div className='p-4 container-fluid bg-primary rounded-4 w-75 ' id='social' >
       <center><div className='container-fluid p-4 bg-primary rounded-4 mb-5'  style={{boxShadow:"0px 0px 50px black"}}>
             <span data-aos="zoom-out-left" className='text-black  '>STAY CONNECTED WITH ME</span>
         </div></center>

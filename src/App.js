@@ -20,13 +20,13 @@ const App = () => {
     {
       setloading(false)
 
-    },2000)
+    },1000)
 
   },[])
   return (
     
     
-  <div className='bg-primary'>
+  <div className=''>
       {loading === true?
       <Loading/>:
       <> 

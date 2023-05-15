@@ -9,12 +9,12 @@ const home = () => {
    
       
    
-      <center><div id='home' className='hero container-fluid '  style={{
-      backgroundImage:"url(https://wallpaperaccess.com/full/5927911.gif)"
+      <center><div id='home' className='hero container-fluid '  style={{ 
+      backgroundImage:"url(https://wallpaperaccess.com/full/8642932.gif)"
 
    
 
-      ,backgroundRepeat:"no-repeat",backgroundSize:"100% 100%",height:"100vh",width:"100%"}} > 
+      ,backgroundRepeat:"no-repeat",backgroundSize:"100% 100%",height:"100vh",width:"100%",zIndex:-1}} > 
 
 
 

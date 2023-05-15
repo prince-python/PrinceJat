@@ -4,7 +4,7 @@ const Projects = () => {
   return (
 
      <>
-      <center><div className='p-4 container-fluid bg-primary rounded-4 w-75 ' id="project" >
+      <center><div className='p-4 container-fluid bg-primary rounded-4 w-75 ' id="project">
       <center><div className='container-fluid p-4 bg-primary rounded-4 mb-5'  style={{boxShadow:"0px 0px 50px black"}}>
             <span data-aos="zoom-out-left" className='text-black '>Projects</span>
         </div></center>
@@ -65,7 +65,7 @@ const Projects = () => {
 </div>
 </div>
 
-<div className='p-5 container-fluid bg-primary rounded-4 w-75 ' id="about" >
+<div className='p-1 container-fluid bg-primary rounded-4 w-75 ' id="about" >
 
     <center><div className='container-fluid p-4 bg-primary rounded rounded-4 mb-2 mt-5'  style={{boxShadow:"0px 0px 50px black"}} data-aos="fade-down ">
             <span data-aos="zoom-out-left" className='text-black '>LIVE PROJECTS</span>

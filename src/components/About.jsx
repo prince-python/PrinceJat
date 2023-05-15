@@ -10,7 +10,7 @@ const About = () => {
     return (
         
     <>
-    <center><div className='p-4 container-fluid bg-primary rounded-4 w-75 ' id="about" >
+    <center><div className='p-4 container-fluid bg-primary rounded-4 w-75 ' id="about" data-aos="fade-down-right">
 
     <center><div className='container-fluid p-4 bg-primary rounded rounded-4 mb-5 mt-5'  style={{boxShadow:"0px 0px 50px black"}} data-aos="fade-down ">
             <span data-aos="zoom-out-left" className='text-black '>WORK I CAN DO FOR YOU</span>
@@ -47,9 +47,7 @@ const About = () => {
          AND HOSTING WILL BE ONE OF THE MOST TRUSTED CLOUD SERVICE AMAZON WEB SERVICE AWS </p>
      </div>
  </div>
- <div className='col-12 mt-5 rounded-4 p-2'data-aos="zoom-out-right"  style={{boxShadow:"0px 0px 100px black"}}>
-    <img src="https://www.wingstechsolutions.com/wp-content/uploads/2022/03/full-stack-development.gif" className='rounded-5' style={{height:"70vh",width:"100%"}} alt="" />
- </div>
+
  
  </div></div></center>
        </>

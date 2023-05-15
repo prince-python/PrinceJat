@@ -42,7 +42,7 @@ const section = () => {
                             </div>
                         </div>
                     </div>
-                    <center><div className='container-fluid p-4 bg-primary rounded-4 mt-4 mb-4'   style={{boxShadow:"0px 0px 50px black"}}>
+                    <center><div className='container-fluid p-1 bg-primary rounded-4 mt-4 mb-4'   style={{boxShadow:"0px 0px 50px black"}}>
             <span data-aos="zoom-out-left" className='text-black  '>FRAMEWORK-</span>
             <span data-aos="zoom-out-right" className='text-black '>KNOWLEDGE</span>
         </div></center>
@@ -74,7 +74,7 @@ const section = () => {
                             </div>
                         </div>
                     </div>
-                    <center><div className='container-fluid p-4 bg-primary rounded-4 mt-4 mb-4'   style={{boxShadow:"0px 0px 50px black"}}>
+                    <center><div className='container-fluid p-1 bg-primary rounded-4 mt-4 mb-4'   style={{boxShadow:"0px 0px 50px black"}}>
             <span data-aos="zoom-out-left" className='text-black  '>DEPLOYINY-</span>
             <span data-aos="zoom-out-right" className='text-black '>KNOWLEDGE</span>
         </div></center>
