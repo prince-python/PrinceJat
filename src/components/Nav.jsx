@@ -10,7 +10,7 @@ function BasicExample() {
     <Navbar bg="primary" expand="lg" className='position-sticky  fixed-top' 
     style={{boxShadow:"0px 0px 100px black",}} >
     <Container>
-      <Navbar.Brand href="#home" style={{fontFamily:"cursive",boxShadow:"0px 0px  10px cornflowerblue" }} className=' rounded-2 p-2 text-black '>FULL STACK WEB DEVLOPER</Navbar.Brand>
+      <Navbar.Brand href="#home" style={{fontFamily:"Lilita One",boxShadow:"0px 0px  10px cornflowerblue" }} className=' rounded-2 p-2 text-black '>FULL STACK WEB DEVLOPER</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto text-black bolder">

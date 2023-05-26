@@ -45,7 +45,7 @@ const home = () => {
      data-aos-easing="ease-in-back"
      data-aos-delay="100"
      data-aos-offset="40">
-        <h1 className='text-primary'  style={{fontFamily:"cursive",fontWeight:"bolder",textShadow:"0px 0px 100px blue" }}
+        <h1 className='text-white'  style={{fontFamily:"Lilita One",fontWeight:"bolder",textShadow:"0px 0px 100px blue" }}
         >WELCOME</h1></div>
 
 
@@ -55,7 +55,7 @@ const home = () => {
      data-aos-easing="ease-in-back"
      data-aos-delay="400"
      data-aos-offset="40">
-        <h1 className='text-white font-weight-bold'  style={{fontFamily:"cursive",fontWeight:"bolder" }}> TO </h1></div>
+        <h1 className='text- font-weight-bold'  style={{fontFamily:"Lilita One",fontWeight:"bolder" }}> TO </h1></div>
 
 
 
@@ -64,7 +64,7 @@ const home = () => {
      data-aos-easing="ease-in-back"
      data-aos-delay="600"
      data-aos-offset="40">
-        <h1 className='text-primary font-weight-bold'  style={{fontFamily:"cursive",fontWeight:"bolder" }}> MY </h1></div>
+        <h1 className='text-white font-weight-bold'  style={{fontFamily:"Lilita One",fontWeight:"bolder" }}> MY </h1></div>
 
 
 
@@ -74,7 +74,7 @@ const home = () => {
      data-aos-easing="ease-in-back"
      data-aos-delay="800"
      data-aos-offset="40">
-        <h1 className='text-white font-weight-bold'  style={{fontFamily:"cursive",fontWeight:"bolder" }}> MODDED </h1></div>
+        <h1 className='text-white font-weight-bold'  style={{fontFamily:"Lilita One",fontWeight:"bolder" }}> MODDED </h1></div>
 
 
 
@@ -85,7 +85,7 @@ const home = () => {
      data-aos-easing="ease-in-back"
      data-aos-delay="1000"
      data-aos-offset="200">
-        <h1 className='text-primary font-weight-bold'  style={{fontFamily:"cursive",fontWeight:"bolder" }}>WORLD</h1></div>
+        <h1 className='text-white font-weight-bold'  style={{fontFamily:"Lilita One",fontWeight:"bolder" }}>WORLD</h1></div>
 
 
 
