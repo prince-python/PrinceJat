@@ -10,47 +10,26 @@ const home = () => {
       
    
       <center><div id='home' className='hero container-fluid '  style={{ 
-      backgroundImage:"url(https://wallpaperaccess.com/full/8642932.gif)"
+      backgroundImage:"url(https://media2.giphy.com/media/1zRfp0Jwsag4yPekP4/giphy.gif)"
 
    
 
       ,backgroundRepeat:"no-repeat",backgroundSize:"100% 100%",height:"100vh",width:"100%",zIndex:-1}} > 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       
-       <div className=' top-50 position-relative text-white border-3 border-dark d-inline-block mx-1'
+       <div id="hovertext" className=' top-50 position-relative text-white border-3 border-dark d-inline-block mx-1'
         
          data-aos="fade-up"
 
      data-aos-easing="ease-in-back"
      data-aos-delay="100"
      data-aos-offset="40">
-        <h1 className='text-white'  style={{fontFamily:"Lilita One",fontWeight:"bolder",textShadow:"0px 0px 100px blue" }}
+        <h1  className='text-white'  style={{fontFamily:"Lilita One",fontWeight:"bolder",textShadow:"0px 0px 100px blue" }}
         >WELCOME</h1></div>
 
 
 
-        <div className=' position-relative top-50  text-white border-3 border-dark d-inline-block mx-1' 
+        <div id="hovertext" className=' position-relative top-50  text-white border-3 border-dark d-inline-block mx-1' 
          data-aos="fade-down"
      data-aos-easing="ease-in-back"
      data-aos-delay="400"
@@ -59,7 +38,7 @@ const home = () => {
 
 
 
-        <div className=' position-relative  top-50 text-white border-3 border-dark d-inline-block mx-1'
+        <div id="hovertext" className=' position-relative  top-50 text-white border-3 border-dark d-inline-block mx-1'
           data-aos="fade-up"
      data-aos-easing="ease-in-back"
      data-aos-delay="600"
@@ -69,7 +48,7 @@ const home = () => {
 
 
 
-        <div className=' position-relative  top-50  text-white border-3 border-dark d-inline-block mx-1'
+        <div id="hovertext" className=' position-relative  top-50  text-white border-3 border-dark d-inline-block mx-1'
           data-aos="fade-down"
      data-aos-easing="ease-in-back"
      data-aos-delay="800"
@@ -80,7 +59,7 @@ const home = () => {
 
 
 
-        <div className=' position-relative top-50   text-white border-3 border-dark d-inline-block ' 
+        <div id="hovertext" className=' position-relative top-50   text-white border-3 border-dark d-inline-block ' 
         data-aos="fade-up"
      data-aos-easing="ease-in-back"
      data-aos-delay="1000"
