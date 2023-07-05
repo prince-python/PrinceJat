@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/PrinceJat/static/css/main.6e376192.css",
-    "main.js": "/PrinceJat/static/js/main.065caaed.js",
+    "main.css": "/PrinceJat/static/css/main.55e119ef.css",
+    "main.js": "/PrinceJat/static/js/main.c4111ac9.js",
     "static/js/787.55ef13f9.chunk.js": "/PrinceJat/static/js/787.55ef13f9.chunk.js",
-    "static/media/NSAUI.gif": "/PrinceJat/static/media/NSAUI.c2fecfe209d68b39f829.gif",
     "index.html": "/PrinceJat/index.html",
-    "main.6e376192.css.map": "/PrinceJat/static/css/main.6e376192.css.map",
-    "main.065caaed.js.map": "/PrinceJat/static/js/main.065caaed.js.map",
+    "main.55e119ef.css.map": "/PrinceJat/static/css/main.55e119ef.css.map",
+    "main.c4111ac9.js.map": "/PrinceJat/static/js/main.c4111ac9.js.map",
     "787.55ef13f9.chunk.js.map": "/PrinceJat/static/js/787.55ef13f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e376192.css",
-    "static/js/main.065caaed.js"
+    "static/css/main.55e119ef.css",
+    "static/js/main.c4111ac9.js"
   ]
 }
