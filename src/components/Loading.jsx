@@ -4,7 +4,7 @@ import { Triangle } from 'react-loader-spinner'
 const Loading = () => {
   return (<center>
   
-<div className=' bg-black align-item-center   h-25 w-25'>
+<div className=' bg-transparent align-item-center   h-25 w-25'>
 
   <Triangle
   height="100vh"

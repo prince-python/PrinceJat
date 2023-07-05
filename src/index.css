@@ -12,7 +12,12 @@ code {
     monospace;
 }
 
+#bod{
+  background-image: url('./assests/fd3697a3fa9916148fc0f195774a8c3a.gif');
 
+  background-size: contain;
+ 
+}
 
 
  #home{
