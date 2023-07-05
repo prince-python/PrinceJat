@@ -1,5 +1,5 @@
 import React from 'react'
-import nsaui from '../assests/NSAUI.gif'
+
 
 
 const home = () => {
@@ -8,7 +8,7 @@ const home = () => {
    <>
    
 
-      <center><div id='home' className='hero container-fluid '   > 
+      <center><div id='home' className='container-fluid '   > 
 
       
        <div id="hovertext" className=' top-50 position-relative text-white border-3 border-dark d-inline-block mx-1'
