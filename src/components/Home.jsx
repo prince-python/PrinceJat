@@ -3,6 +3,7 @@ import React from 'react'
 
 
 const home = () => {
+  
   return (
    
    <>
@@ -10,8 +11,11 @@ const home = () => {
 
       <center><div id='home' className='container-fluid '   > 
 
+
+     
+
       
-       <div id="hovertext" className=' top-50 position-relative text-white border-3 border-dark d-inline-block mx-1'
+       {/* <div id="hovertext" className=' top-50 position-relative text-white border-3 border-dark d-inline-block mx-1'
         
          data-aos="fade-up"
 
@@ -62,7 +66,7 @@ const home = () => {
 
 
 
-
+ */}
 
 
       </div></center>
