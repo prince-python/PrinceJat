@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/PrinceJat/static/css/main.a6094bb4.css",
-    "main.js": "/PrinceJat/static/js/main.46a082de.js",
+    "main.css": "/PrinceJat/static/css/main.b956995f.css",
+    "main.js": "/PrinceJat/static/js/main.e111063c.js",
     "static/js/787.55ef13f9.chunk.js": "/PrinceJat/static/js/787.55ef13f9.chunk.js",
-    "static/media/tumblr__ac4918cf_640.gif": "/PrinceJat/static/media/tumblr_a523aac3670fb6af34ba6bf92a9a5917_ac4918cf_640.d329372aff06bfa4c73d.gif",
+    "static/media/s.webp": "/PrinceJat/static/media/s.8d3a47bfcfbf12b6596a.webp",
+    "static/media/bg1.jpg": "/PrinceJat/static/media/bg1.ca90c2e1a338e27de450.jpg",
+    "static/media/c.gif": "/PrinceJat/static/media/c.9e016757bd82c7d5a7a5.gif",
+    "static/media/back1.jpg": "/PrinceJat/static/media/back1.5d913b7d9929eb0afd1c.jpg",
+    "static/media/front.jpg": "/PrinceJat/static/media/front.43317bb312f6f5271c6e.jpg",
+    "static/media/cb1.jpeg": "/PrinceJat/static/media/cb1.2769625c9b10c9000ce9.jpeg",
     "index.html": "/PrinceJat/index.html",
-    "main.a6094bb4.css.map": "/PrinceJat/static/css/main.a6094bb4.css.map",
-    "main.46a082de.js.map": "/PrinceJat/static/js/main.46a082de.js.map",
+    "main.b956995f.css.map": "/PrinceJat/static/css/main.b956995f.css.map",
+    "main.e111063c.js.map": "/PrinceJat/static/js/main.e111063c.js.map",
     "787.55ef13f9.chunk.js.map": "/PrinceJat/static/js/787.55ef13f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6094bb4.css",
-    "static/js/main.46a082de.js"
+    "static/css/main.b956995f.css",
+    "static/js/main.e111063c.js"
   ]
 }
