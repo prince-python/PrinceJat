@@ -1,49 +1,68 @@
-import React from 'react'
-
-const Projecsts = () => {
+import React from 'react';
+import { FaYoutube, FaGithub, FaLinkedin } from 'react-icons/fa';
+const toolIconStyle = {
+  color: '#fff',
+  
+  background: '#111',
+ 
+  borderRadius: '8px',
+  boxShadow: '0 0 10px #aaa',
+};
+const Connect = () => {
   return (
     <>
-      <center><div className='p-4 container-fluid bg-transparent rounded-4 w-75 ' id='social' >
-      <center><div className='container-fluid p-4 bg-transparent rounded-4 mb-5'  style={{boxShadow:"0px 0px 10px white"}}>
-            <span data-aos="zoom-out-left" className='text-white  '>STAY CONNECTED WITH ME</span>
-        </div></center>
-       <div className="row  ">
- <div className="col-sm-6 rounded-4 border border-dark p-3 bg-transparent" data-aos="zoom-out"  style={{minHeight: "400px",boxShadow:"0px 0px 10px white"}}  >
-     <a href="https:www.youtube.com/channel/UCyUGNzzEY0xYyWux5aPOGow"><img className="position-relative rounded-5 p-2 w-75  h-100"
-      style={{boxShadow:"0px 0px 10px white"}}
-       src="https://i.gifer.com/TDdx.gif" alt="" /></a>
-     </div>
-     <div className="col-sm-6 rounded-4 border border-dark bg-transparent p-3" data-aos="zoom-out"  style={{minHeight: "400px",boxShadow:"0px 0px 10px white"}}>
-     <a href="https:github.com/prince-python"><img className="position-relative rounded-5 p-2 w-75  h-100" style={{boxShadow:"0px 0px 10px white"}}
-      src="https://media0.giphy.com/media/CwTvSiWflgCGKgz5eb/giphy.gif?cid=6c09b952bzuzmxe1gt3p6l58urw9q4n8h1j85x2jt26misfr&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" alt="" /></a>
-     </div>
- </div>
- <div className="row ">
-     <div className="col-sm-6 bg-transparent rounded-4 border border-dark p-3" data-aos="zoom-out" style={{ minHeight: "400px",boxShadow:"0px 0px 10px white"}}>
-         <a href="https:www.linkedin.com/in/prince-chaudhary-61a17b240/"><img className="position-relative rounded-5 p-2 w-75  h-100" 
-         style={{boxShadow:"0px 0px 10px white"}}  src="https://icon-library.com/images/linkedin-icon-white-png/linkedin-icon-white-png-10.jpg"
-          alt="" /></a>
-     </div>
-     <div className="col-sm-6  bg-transparent rounded-4 border border-dark p-3" data-aos="zoom-out" style={{ minHeight: "400px",boxShadow:"0px 0px 10px white"}}>
-         <a href="https:www.linkedin.com/in/prince-chaudhary-61a17b240/"><img className="position-relative rounded-5 p-2 w-75  h-100" style={{boxShadow:"0px 0px 10px white"}}
-           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkkRcDbvuhOvN6e1UXzZ0QjqRLT1EiWStoBTy3TmU3pA&s"
-          alt="" /></a>
-     </div>
-  
-   <div
-     className="container rounded-4  mt-5 bg-transparent  mb-5"
-     data-aos="zoom-out"
-     style={{ letterSpacing: "1px" ,boxShadow:"0px 0px 10px white" }}
-   
-   >
-     <a className='text-white position-relative' style={{textDecoration: "none"}} href="https://drive.google.com/drive/folders/1N-StDJIWtXXxw0DyBJsBfhLJmE-2n_Ua?usp=share_link"> DOWNLOAD MY RESUME</a>
-   </div>
-   
-</div>
-</div></center>
+      <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
 
+      <style>{`
+        .tesla-font {
+          font-family: 'Orbitron', sans-serif;
+        }
+        .social-icon {
+          font-size: 5rem;
+          color: white;
+          transition: transform 0.3s ease;
+        }
+        .social-icon:hover {
+          transform: scale(1.2);
+          color: #00ffcc;
+        }
+        .social-label {
+          margin-top: 10px;
+          font-size: 1.2rem;
+          font-family: 'Orbitron', sans-serif;
+        }
+      `}</style>
+
+      <center>
+        <div className='p-4 container-fluid bg-transparent rounded-4 w-75' id='social'>
+          <div className='container-fluid p-4 bg-transparent rounded-4 mb-5' style={{ boxShadow: "0px 0px 10px white" }}>
+            <span data-aos="zoom-out-left" className='text-white tesla-font'>STAY CONNECTED WITH ME</span>
+          </div>
+
+          <div className="row">
+            <div className="col-sm-4 rounded-4 border border-dark p-5 bg-transparent d-flex flex-column align-items-center justify-content-center" data-aos="zoom-out" style={{ minHeight: "200px", boxShadow: "0px 0px 10px white" }}>
+              <a href="https://www.youtube.com/channel/UCyUGNzzEY0xYyWux5aPOGow" target="_blank" rel="noopener noreferrer">
+                <FaYoutube className="social-icon" style={toolIconStyle} />
+              </a>
+              <div className="text-white social-label">YouTube</div>
+            </div>
+            <div className="col-sm-4 rounded-4 border border-dark p-5 bg-transparent d-flex flex-column align-items-center justify-content-center" data-aos="zoom-out" style={{ minHeight: "200px", boxShadow: "0px 0px 10px white" }}>
+              <a href="https://github.com/prince-python" target="_blank" rel="noopener noreferrer">
+                <FaGithub className="social-icon"  style={toolIconStyle}/>
+              </a>
+              <div className="text-white social-label" >GitHub</div>
+            </div>
+            <div className="col-sm-4 rounded-4 border border-dark p-5 bg-transparent d-flex flex-column align-items-center justify-content-center" data-aos="zoom-out" style={{ minHeight: "200px", boxShadow: "0px 0px 10px white" }}>
+              <a href="https://www.linkedin.com/in/prince-chaudhary-253b36350/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin className="social-icon" style={toolIconStyle} />
+              </a>
+              <div className="text-white social-label">LinkedIn</div>
+            </div>
+          </div>
+        </div>
+      </center>
     </>
-  )
-}
+  );
+};
 
-export default Projecsts
+export default Connect;

@@ -5,16 +5,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+
+
 }
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
-
-
+/* 
  #home{
   z-index: -1;
   background-image: url("./assests/Sleek Menswear Instagram Post.gif");
@@ -24,10 +31,10 @@ code {
   height: 100vh;
   width:100%;
 
- }
+ } */
 
 #contact{
-  background-image: url("https://i.gifer.com/TgpA.gif");
+  background-image: url("/src/assests/c.gif");
   background-repeat: no-repeat;
   background-size:cover;
   background-position:center;
@@ -35,5 +42,23 @@ code {
   width:100%;
 
 }
+
+/* Remove horizontal scroll globally */
+
+
+/* Make images & divs responsive */
+img, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Remove margin leaks on small devices */
+.container-fluid, .row, .col {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 

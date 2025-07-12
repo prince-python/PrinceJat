@@ -1,125 +1,208 @@
-import React from 'react'
+import React from 'react';
 
 const Projects = () => {
   return (
+    <>
+      {/* Tesla Font */}
+      <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
 
-     <>
-      <center><div className='p-4 container-fluid bg-transparent rounded-4 w-75 ' id="project">
-      <center><div className='container-fluid p-4 bg-transparent rounded-4 mb-5'  style={{boxShadow:"0px 0px 10px white",}}>
-            <span data-aos="zoom-out-left" className='text-white bg-transparent'>P R O J E C T S</span>
-        </div></center>
-       <div className="row ">
-       <div className="col-sm-3  bg-transparent p-4 rounded-4 border border-dark " data-aos="zoom-out" style={{ minHeight: "400px",boxShadow:"0px 0px 10px white"}}>
-        <h4 class="text-white">APi For A College Using Rest Framework</h4>
-         <a href="https://github.com/prince-python/API-FOR-COLLEGE-USING-DRF"><img className="position-relative rounded-5 p-1 w-75  h-75" style={{boxShadow:"0px 0px 10px white"}} 
-          src="https://miro.medium.com/max/1280/0*nMIihlA1D1D5MoQO.gif"
-          alt="" /></a>
-     </div>
-     <div className="col-sm-3  bg-transparent p-4 rounded-4 border border-dark " data-aos="zoom-out" style={{ minHeight: "400px",boxShadow:"0px 0px 10px white"}}>
-        <h4 class="text-white">Table Generator For students C++</h4>
-         <a href="https://github.com/prince-python/i-create-simPLE-TABLE-GENENRATOR-USING-C-"><img className="position-relative rounded-5 p-1 w-75  h-75" style={{boxShadow:"0px 0px 10px white"}} 
-          src="https://www.math-salamanders.com/image-files/2-times-tables-quadra.gif"
-          alt="" /></a>
-     </div>
-     <div className="col-sm-3  bg-transparent p-4 rounded-4 border border-dark " data-aos="zoom-out" style={{ minHeight: "400px",boxShadow:"0px 0px 10px white"}}>
-        <h4 class="text-white">Atm Concept Using Python OPS</h4>
-         <a href="https://github.com/prince-python/QUIZ-WITH-JAVA-SCRIPT"><img className="position-relative rounded-5 p-1 w-75  h-75" style={{boxShadow:"0px 0px 10px white"}} 
-          src="https://media1.giphy.com/media/26xBMuHu0ZFngH7Ta/200.gif?cid=6c09b952c3wlo2y01tdny5jkfoxeqniwzk4o1t27knslabvp&rid=200.gif&ct=g"
-          alt="" /></a>
-     </div>
-     <div className="col-sm-3  bg-transparent p-4 rounded-4 border border-dark " data-aos="zoom-out" style={{ minHeight: "400px",boxShadow:"0px 0px 10px white"}}>
-        <h4 class="text-white">QUIZ APP USING JAVA SCRIPT</h4>
-         <a href="https://github.com/prince-python/QUIZ-WITH-JAVA-SCRIPT"><img className="position-relative rounded-5 p-1 w-75  h-75" style={{boxShadow:"0px 0px 10px white"}} 
-          src="https://media4.giphy.com/media/LOznMvZUKneOhiIscg/giphy.gif"
-          alt="" /></a>
-     </div>
- </div>
- <div className="row ">
- <div className="col-sm-3  bg-transparent p-4 rounded-4 border border-dark " data-aos="zoom-out" style={{ minHeight: "400px",boxShadow:"0px 0px 10px white"}}>
-        <h4 class="text-white">Tea Ecommerce webSite</h4>
-         <a href="https://github.com/prince-python/Higarden-tea-ecommerce-website-"><img className="position-relative rounded-5 p-1 w-75  h-75" style={{boxShadow:"0px 0px 10px white"}} 
-          src="https://media.tenor.com/EZ01T6c9N80AAAAM/tea-tea-pour.gif"
-          alt="" /></a>
-     </div>
-     <div className="col-sm-3  bg-transparent p-4 rounded-4 border border-dark " data-aos="zoom-out" style={{ minHeight: "400px",boxShadow:"0px 0px 10px white"}}>
-        <h4 class="text-white">Text Modder React Js</h4>
-         <a href="https://github.com/prince-python/TEXT-UTILITIES-AND-MODIFIER-APP-USING-REACT"><img className="position-relative rounded-5 p-1 w-75  h-75" style={{boxShadow:"0px 0px 10px white"}} 
-          src="https://global-uploads.webflow.com/618fa90c201104b94458e1fb/6299f18349b8304b2427860a_FP0RnJQZi0ZELYsIYPD8LGQ32iywLflse728ZTmTapBqwFUao__86XpjAZGKUbHUIDQjXZ4OrPuBr1zgf0wk_Kef539Ki1GFWnT9K3qCnz0T5z0IYtp4rX-ZxBu7A09Gwg2-gLu9EcXJF6YzSQ.gif"
-          alt="" /></a>
-     </div>
-     <div className="col-sm-3  bg-transparent p-4 rounded-4 border border-dark " data-aos="zoom-out" style={{ minHeight: "400px",boxShadow:"0px 0px 10px white"}}>
-        <h4 class="text-white"> School E R P Project </h4>
-         <a href="https://github.com/prince-python/SCHOOL-MANAGEMENT--PANEL"><img className="position-relative rounded-5 p-1 w-75  h-75" style={{boxShadow:"0px 0px 10px white"}} 
-          src="https://i.pinimg.com/originals/00/27/cd/0027cd8fc791f07dd1b887797c8a0b9e.gif"
-          alt="" /></a>
-     </div>
-     <div className="col-sm-3  bg-transparent p-4 rounded-4 border border-dark " data-aos="zoom-out" style={{ minHeight: "400px",boxShadow:"0px 0px 10px white"}}>
-        <h4 class="text-white">CRUD APP USING Django</h4>
-         <a href="https://github.com/prince-python/crud_application"><img className="position-relative rounded-5 p-1 w-75  h-75" style={{boxShadow:"0px 0px 10px white"}} 
-          src="https://maxmautner.com/public/images/django.gif"
-          alt="" /></a>
-     </div>
-  
-  
-   
-</div>
-</div>
+      <style>{`
+        .tesla-font {
+          font-family: 'Orbitron', sans-serif;
+        }
+        .tag {
+          display: inline-block;
+          background-color: #111;
+          color: #fff;
+          padding: 2px 8px;
+          margin: 2px;
+          border-radius: 4px;
+          font-size: 12px;
+        }
+        .shadow-white {
+          box-shadow: 0px 0px 10px white;
+        }
+      `}</style>
 
-<div className='p-1 container-fluid bg-transparent rounded-4 w-75 ' id="about" >
+      <center>
+        <div className='p-4 container-fluid bg-transparent rounded-4 w-75' id="project">
+          <div className='container-fluid p-4 bg-transparent rounded-4 mb-5 shadow-white'>
+            <span data-aos="zoom-out-left" className='text-white bg-transparent tesla-font'>P R O J E C T S</span>
+             <hr style={{
+    width: '200px',
+    height: '3px',
+    backgroundColor: 'white',
+    margin: '10px auto',
+    border: 'none',
+    borderRadius: '4px'
+  }} />
+          </div>
 
-    <center><div className='container-fluid p-4 bg-transparent rounded rounded-4 mb-2 mt-5'  style={{boxShadow:"0px 0px 10px white"}} data-aos="fade-down ">
-            <span data-aos="zoom-out-left" className='text-white '>LIVE PROJECTS</span>
-        </div></center>
+          {/* Updated Featured Projects */}
+          <div className="row">
+            <div className="col-sm-6 bg-transparent p-4 rounded-4 border border-dark shadow-white" data-aos="zoom-out">
+              <h4 className="text-white tesla-font">God's Eye - OSINT Dashboard</h4>
+               <hr style={{
+    width: '200px',
+    height: '3px',
+    backgroundColor: 'white',
+    margin: '10px auto',
+    border: 'none',
+    borderRadius: '4px'
+  }} />
+              <p className="text-white">Open-source OSINT tool for gathering info from usernames, emails, domains using APIs.</p>
+              <div><span className='tag'>Python</span><span className='tag'>Django</span><span className='tag'>OSINT</span></div>
+              <a className='btn btn-outline-light mt-2' href="https://github.com/prince-python/Gods_Eye">View Repo</a>
+            </div>
 
- <div className="row bg-transparent p-5 ">
- <div className="col-sm-12 rounded-4 bg-transparent border  border-dark  mt-2 mb-2 p-3" data-aos="zoom-out" style={{boxShadow:"0px 0px 10px white"}} >
-     <div data-aos="zoom-out-right " className=" rounded-4 border-1 border-primary   w-100 h-100" style={{boxShadow:"0px 0px 10px white"}}>
-         <a href="https://dark-fake.vercel.app/" className='text-white btn btn-outline-black'>FAKE DATA GENERATOR DJANGO</a>
-     </div>
- </div>
+            <div className="col-sm-6 bg-transparent p-4 rounded-4 border border-dark shadow-white" data-aos="zoom-out">
+              <h4 className="text-white tesla-font">Text Utilities - React</h4>
+               <hr style={{
+    width: '200px',
+    height: '3px',
+    backgroundColor: 'white',
+    margin: '10px auto',
+    border: 'none',
+    borderRadius: '4px'
+  }} />
+              <p className="text-white">Live React app to transform and clean text. Offers case change, trimming, and more.</p>
+              <div><span className='tag'>React</span><span className='tag'>JSX</span><span className='tag'>Utilities</span></div>
+              <a className='btn btn-outline-light mt-2' href="https://github.com/prince-python/TEXT-UTILITIES-AND-MODIFIER-APP-USING-REACT">View Repo</a>
+            </div>
+          </div>
 
- <div className="col-sm-12 rounded-4 bg-transparent border  border-dark p-3 mt-2 mb-2" data-aos="zoom-out" style={{boxShadow:"0px 0px 10px white"}} >
-     <div data-aos="zoom-out-right " className=" rounded-4 border-1 border-primary   w-100 h-100" style={{boxShadow:"0px 0px 10px white"}}>
-         <a href="https://live-wether-app-using-django-plaj.vercel.app/" className='text-white btn btn-outline-black'>LIVE WETHER APP DJANGO</a>
-     </div>
- </div>
+          <div className="row mt-4">
+            <div className="col-sm-6 bg-transparent p-4 rounded-4 border border-dark shadow-white" data-aos="zoom-out">
+              <h4 className="text-white tesla-font">School ERP Panel</h4>
+               <hr style={{
+    width: '200px',
+    height: '3px',
+    backgroundColor: 'white',
+    margin: '10px auto',
+    border: 'none',
+    borderRadius: '4px'
+  }} />
+              <p className="text-white">Complete ERP system to manage school, staff, students, and academic modules.</p>
+              <div><span className='tag'>Django</span><span className='tag'>ERP</span><span className='tag'>Admin</span></div>
+              <a className='btn btn-outline-light mt-2' href="https://github.com/prince-python/SCHOOL-MANAGEMENT--PANEL">View Repo</a>
+            </div>
 
+            <div className="col-sm-6 bg-transparent p-4 rounded-4 border border-dark shadow-white" data-aos="zoom-out">
+              <h4 className="text-white tesla-font">Tea Ecommerce Website</h4>
+               <hr style={{
+    width: '200px',
+    height: '3px',
+    backgroundColor: 'white',
+    margin: '10px auto',
+    border: 'none',
+    borderRadius: '4px'
+  }} />
+              <p className="text-white">Frontend-only tea shop website with elegant layout and shopping flow.</p>
+              <div><span className='tag'>HTML</span><span className='tag'>CSS</span><span className='tag'>UI/UX</span></div>
+              <a className='btn btn-outline-light mt-2' href="https://github.com/prince-python/Higarden-tea-ecommerce-website-">View Repo</a>
+            </div>
+          </div>
 
+          <div className="row mt-4">
+            <div className="col-sm-6 bg-transparent p-4 rounded-4 border border-dark shadow-white" data-aos="zoom-out">
+              <h4 className="text-white tesla-font">Fake Data Generator</h4>
+               <hr style={{
+    width: '200px',
+    height: '3px',
+    backgroundColor: 'white',
+    margin: '10px auto',
+    border: 'none',
+    borderRadius: '4px'
+  }} />
+              <p className="text-white">Generate fake user records with Django faker library and export data.</p>
+              <div><span className='tag'>Python</span><span className='tag'>Django</span><span className='tag'>Faker</span></div>
+              <a className='btn btn-outline-light mt-2' href="https://github.com/prince-python">View Repo</a>
+            </div>
 
- <div className="col-sm-12 rounded-4 bg-transparent border  border-dark p-3 mt-2 mb-2" data-aos="zoom-out" style={{boxShadow:"0px 0px 10px white"}} >
-     <div data-aos="zoom-out-right " className=" rounded-4 border-1 border-primary   w-100 h-100" style={{boxShadow:"0px 0px 10px white"}}>
-         <a href=" https://prince-python.github.io/TEXT-Modder/" className='text-white btn btn-outline-black'>TEXT UTILITY REACT</a>
-     </div>
- </div>
- 
+            <div className="col-sm-6 bg-transparent p-4 rounded-4 border border-dark shadow-white" data-aos="zoom-out">
+              <h4 className="text-white tesla-font">Live Weather App</h4>
+               <hr style={{
+    width: '200px',
+    height: '3px',
+    backgroundColor: 'white',
+    margin: '10px auto',
+    border: 'none',
+    borderRadius: '4px'
+  }} />
+              <p className="text-white">Weather forecast app using Django and weather API integration.</p>
+              <div><span className='tag'>Django</span><span className='tag'>API</span><span className='tag'>Weather</span></div>
+              <a className='btn btn-outline-light mt-2' href="https://github.com/prince-python">View Repo</a>
+            </div>
+          </div>
 
+          <div className="row mt-4">
+            <div className="col-sm-6 bg-transparent p-4 rounded-4 border border-dark shadow-white" data-aos="zoom-out">
+              <h4 className="text-white tesla-font">API for College</h4>
+               <hr style={{
+    width: '200px',
+    height: '3px',
+    backgroundColor: 'white',
+    margin: '10px auto',
+    border: 'none',
+    borderRadius: '4px'
+  }} />
+              <p className="text-white">REST API for managing college data like students and faculty.</p>
+              <div><span className='tag'>DRF</span><span className='tag'>API</span><span className='tag'>Backend</span></div>
+              <a className='btn btn-outline-light mt-2' href="https://github.com/prince-python/API-FOR-COLLEGE-USING-DRF">View Repo</a>
+            </div>
 
- <div className="col-sm-12 rounded-4 bg-transparent border  border-dark p-3 mt-2 mb-2" data-aos="zoom-out" style={{boxShadow:"0px 0px 10px white"}} >
-     <div data-aos="zoom-out-right " className=" rounded-4 border-1 border-primary   w-100 h-100" style={{boxShadow:"0px 0px 10px white"}}>
-         <a href=" https://princejathere.000webhostapp.com/calculator.php" className='text-white btn btn-outline-black'>CALCULATOR </a>
-     </div>
- </div>
+            <div className="col-sm-6 bg-transparent p-4 rounded-4 border border-dark shadow-white" data-aos="zoom-out">
+              <h4 className="text-white tesla-font">Basic CRUD Django App</h4>
+               <hr style={{
+    width: '200px',
+    height: '3px',
+    backgroundColor: 'white',
+    margin: '10px auto',
+    border: 'none',
+    borderRadius: '4px'
+  }} />
+              <p className="text-white">Simple CRUD web app for performing create, read, update, and delete.</p>
+              <div><span className='tag'>Django</span><span className='tag'>CRUD</span><span className='tag'>Forms</span></div>
+              <a className='btn btn-outline-light mt-2' href="https://github.com/prince-python/crud_application">View Repo</a>
+            </div>
+          </div>
+        </div>
 
+        {/* LIVE PROJECTS */}
+        <div className='p-1 container-fluid bg-transparent rounded-4 w-75' id="about">
+          <div className='container-fluid p-4 bg-transparent rounded rounded-4 mb-2 mt-5 shadow-white' data-aos="fade-down">
+            <span data-aos="zoom-out-left" className='text-white tesla-font'>LIVE PROJECTS</span>
+             <hr style={{
+    width: '200px',
+    height: '3px',
+    backgroundColor: 'white',
+    margin: '10px auto',
+    border: 'none',
+    borderRadius: '4px'
+  }} />
+          </div>
 
- 
- <div className="col-sm-12 rounded-4 bg-transparent border  border-dark p-3 mt-2 mb-2" data-aos="zoom-out" style={{boxShadow:"0px 0px 10px white"}} >
-     <div data-aos="zoom-out-right " className=" rounded-4 border-1 border-primary   w-100 h-100" style={{boxShadow:"0px 0px 10px white"}}>
-         <a href="https://github.com/prince-python" className='text-white btn btn-outline-black'>GITHUB</a>
-     </div>
- </div>
- </div>
-
-</div>
-
-
-
-
-
-
-</center>
-
+          <div className="row bg-transparent p-5">
+            <div className="col-sm-12 rounded-4 bg-transparent border border-dark mt-2 mb-2 p-3 shadow-white" data-aos="zoom-out">
+              <a href="https://dark-fake.vercel.app/" className='btn btn-outline-light tesla-font'>FAKE DATA GENERATOR DJANGO</a>
+            </div>
+            <div className="col-sm-12 rounded-4 bg-transparent border border-dark p-3 mt-2 mb-2 shadow-white" data-aos="zoom-out">
+              <a href="https://live-wether-app-using-django-plaj.vercel.app/" className=' btn btn-outline-light tesla-font'>LIVE WEATHER APP DJANGO</a>
+            </div>
+            <div className="col-sm-12 rounded-4 bg-transparent border border-dark p-3 mt-2 mb-2 shadow-white" data-aos="zoom-out">
+              <a href=" https://prince-python.github.io/TEXT-Modder/" className=' btn btn-outline-light tesla-font'>TEXT UTILITY REACT</a>
+            </div>
+            <div className="col-sm-12 rounded-4 bg-transparent border border-dark p-3 mt-2 mb-2 shadow-white" data-aos="zoom-out">
+              <a href=" https://princejathere.000webhostapp.com/calculator.php" className=' btn btn-outline-light tesla-font'>CALCULATOR</a>
+            </div>
+            <div className="col-sm-12 rounded-4 bg-transparent border border-dark p-3 mt-2 mb-2 shadow-white" data-aos="zoom-out">
+              <a href="https://github.com/prince-python" className=' btn btn-outline-light tesla-font'>GITHUB</a>
+            </div>
+          </div>
+        </div>
+      </center>
     </>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

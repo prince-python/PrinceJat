@@ -10,6 +10,8 @@ import Contact from './components/Contact';
 import { useEffect, useState } from 'react';
 import Loading from './components/Loading';
 import './App.css';
+import Kalli from './components/Kali'
+
 
 
 const App = () => {
@@ -36,9 +38,11 @@ const App = () => {
       <About/>
       <Projects/>
       <Section/>
+      <Kalli/>
   
       <Connect/>
       <Contact/>
+ 
       </div>
       </>}</div>
     
