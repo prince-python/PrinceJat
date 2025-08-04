@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css'; // If needed for global Tesla font
-
+import TypingText from './Typing';
 const Home = () => {
   return (
      <> {/* Tesla Font CDN */}
@@ -49,10 +49,17 @@ const Home = () => {
           textShadow: '0 0 0px white',
         }}
       >
-        <img
-          src="https://readme-typing-svg.demolab.com?font=TESLA+Regular&size=60&duration=4000&pause=1000&color=FFFFFF&center=true&vCenter=true&width=900&lines=Hi+I'm+PRINCE+CHAUDHARY;CYBERSECURITY%7C+PENTESTER;PYTHON+%7C+DJANGO;+REACT+%7C+ETHICAL HACKER;+BACKEND+%7C+FRONTEND"
-          alt="Typing SVG"
-        />
+         <TypingText
+        lines={[
+          "Hi I'm PRINCE CHAUDHARY",
+          "CYBERSECURITY | PENTESTER",
+          "PYTHON | DJANGO",
+          "REACT | ETHICAL HACKER",
+          "BACKEND | FRONTEND",
+        ]}
+        speed={60}
+        pause={1500}
+      />
       </h1>
     </div></>
   );
