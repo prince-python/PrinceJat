@@ -44,3 +44,12 @@ img, iframe {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #0f0;
+  border-radius: 10px;
+}

@@ -1,24 +1,41 @@
-import React from 'react'
-import { Triangle } from 'react-loader-spinner'
+import React from 'react';
 
 const Loading = () => {
-  return (<center>
+  return (
+    <>
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+        backgroundColor: 'black',
   
-<div className=' bg-transparent align-item-center   h-25 w-25'>
+        color: '#00ff00',
+        fontSize: '5rem'
+      }} >
+        
+        <span style={
+          {
+               fontFamily: 'TESLA',
+               
+        
+          marginLeft: '5px',
+          animation: 'blink 0.8s infinite',
+          
+          color: '#00ff00'
+        }} className="">{">_"}</span>
+      </div>
 
-  <Triangle
-  height="100vh"
-  width="100vh"
-  color="white"
-  ariaLabel="triangle-loading"
-  wrapperStyle={{}}
-  wrapperClassName=""
-  visible={true}
-  
-  
-/></div>
-</center>
-  )
-}
+      {/* Embedded CSS using a <style> tag */}
+      <style>{`
+        @keyframes blink {
+          0% { opacity: 1; }
+          50% { opacity: 0; }
+          100% { opacity: 1; }
+        }
+      `}</style>
+    </>
+  );
+};
 
-export default Loading
+export default Loading;
