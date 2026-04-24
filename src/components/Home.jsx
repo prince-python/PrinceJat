@@ -10,7 +10,7 @@ const Home = () => {
     <div
       style={{
         
-        backgroundImage: `url(${require('../assests/bg1.jpg')})`,
+        backgroundImage: `url(${require('../assests/bg1.webp')})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
        
