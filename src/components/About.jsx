@@ -1,125 +1,153 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import cyberGif from '../assests/cb1.jpeg';
-import front from '../assests/front.jpg';
-import back from '../assests/back1.jpg';
+import React, { useEffect, useRef } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import cyberGif from "../assests/cb1.jpeg";
+import front from "../assests/front.jpg";
+import back from "../assests/back1.jpg";
 
 const About = () => {
+
   useEffect(() => {
-    AOS.init({ duration: 300 });
+    AOS.init({ duration: 800, once: true });
   }, []);
+
+  const handleMouseMove = (e, ref) => {
+    const rect = ref.current.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    ref.current.style.setProperty("--x", `${x}px`);
+    ref.current.style.setProperty("--y", `${y}px`);
+  };
+
+  const Card = ({ title, desc, img, reverse }) => {
+    const ref = useRef(null); // ✅ correct usage
+
+    return (
+      <div className={`row mb-5 align-items-center ${reverse ? "flex-md-row-reverse" : ""}`}>
+
+        <div className="col-md-6 mb-3" data-aos={reverse ? "fade-left" : "fade-right"}>
+          <div
+            ref={ref}
+            className="glow-card"
+            onMouseMove={(e) => handleMouseMove(e, ref)}
+          >
+            <h5 className="text-center mb-3">{title}</h5>
+            <p style={{ fontSize: "14px", opacity: 0.85 }}>{desc}</p>
+          </div>
+        </div>
+
+        <div className="col-md-6 mb-3" data-aos={reverse ? "fade-right" : "fade-left"}>
+          <img src={img} alt="section" className="img-fluid rounded-4 img-glow" />
+        </div>
+
+      </div>
+    );
+  };
 
   return (
     <>
-      {/* Google Font CDN */}
-      <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
-
-      {/* Inline CSS for font and typing effect */}
       <style>{`
-        .tesla-font {
-          font-family: 'Orbitron', sans-serif;
+
+        .glow-card {
+          position: relative;
+          background: #000;
+          border-radius: 18px;
+          padding: 25px;
+          border: 1px solid rgba(255,255,255,0.2);
+          box-shadow: 0 0 12px rgba(255,255,255,0.25);
+          transition: 0.3s;
+          overflow: hidden;
+          text-align: center;
         }
-       
-       
-        .shadow-white {
-          box-shadow: 0px 0px 10px white;
+
+        /* Pulse */
+        .glow-card::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          border-radius: 18px;
+          box-shadow: 0 0 20px rgba(255,255,255,0.15);
+          animation: pulseGlow 3s infinite;
         }
+
+        @keyframes pulseGlow {
+          0% { box-shadow: 0 0 10px rgba(255,255,255,0.1); }
+          50% { box-shadow: 0 0 25px rgba(255,255,255,0.4); }
+          100% { box-shadow: 0 0 10px rgba(255,255,255,0.1); }
+        }
+
+        /* Mouse glow */
+        .glow-card::after {
+          content: "";
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          background: radial-gradient(circle, rgba(255,255,255,0.4), transparent 70%);
+          top: calc(var(--y) - 100px);
+          left: calc(var(--x) - 100px);
+          opacity: 0;
+          transition: opacity 0.3s;
+          pointer-events: none;
+        }
+
+        .glow-card:hover::after {
+          opacity: 1;
+        }
+
+        .glow-card:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 0 30px rgba(255,255,255,0.7);
+        }
+
+        .img-glow {
+          box-shadow: 0 0 10px rgba(255,255,255,0.2);
+          transition: 0.3s;
+        }
+
+        .img-glow:hover {
+          box-shadow: 0 0 25px white;
+          transform: scale(1.03);
+        }
+
       `}</style>
 
-      <center>
-        <div className="p-4 container-fluid bg-transparent rounded-4 w-75" id="about">
+      <div className="container py-5 text-white" id="about">
 
-          {/* Heading */}
-          <div className='container-fluid w-80 p-4 bg-transparent rounded-4 mb-5 mt-5 shadow-white'  data-aos="zoom-out" >
-            <h2  className='text-white tesla-font '>Work I Can Do</h2>
-        {/* White Line Divider */}
-  <hr style={{
-    width: '200px',
-    height: '3px',
-    backgroundColor: 'white',
-    margin: '10px auto',
-    border: 'none',
-    borderRadius: '4px'
-  }} />
-          </div>
-
-          {/* Frontend Development */}
-          <div className="row">
-            <div className="col-sm-6 rounded-4 bg-transparent border border-dark p-3 shadow-white" data-aos="zoom-out">
-              <div className="rounded-4 border-1 border-primary w-100 p-2 h-100 shadow-white">
-                <h5 className="text-center text-white tesla-font">FRONTEND DEVELOPMENT</h5>
-                 <hr style={{
-    width: '200px',
-    height: '3px',
-    backgroundColor: 'white',
-    margin: '10px auto',
-    border: 'none',
-    borderRadius: '4px'
-  }} />
-                <p className="text-white text-center p-3 tesla-font" data-aos="zoom-out">
-                  I can design futuristic frontends using <strong>HTML, CSS, Tailwind CSS, Bootstrap, JavaScript, jQuery, AJAX, PHP</strong> and the best frontend library <strong>React.js</strong>.
-                </p>
-              </div>
-            </div>
-            <div className="col-sm-6 rounded-4 bg-transparent border border-dark p-3 shadow-white" data-aos="zoom-out">
-              <img className="rounded-4 border-1 border-primary w-100 h-100" data-aos="zoom-out-right"
-                src={front} alt="frontend" />
-            </div>
-          </div>
-
-          {/* Backend Development */}
-          <div className="row pb-3 mt-2">
-            <div className="col-sm-6 rounded-4 bg-transparent border border-dark p-3 shadow-white" data-aos="zoom-out">
-              <img className="rounded-4 border-1 border-primary w-100 h-100"
-               src={back} alt="Hacker GIF" />
-            </div>
-            <div className="col-sm-6 rounded-4 bg-transparent border border-dark p-3 shadow-white" data-aos="zoom-out">
-              <div className="rounded-4 border-1 border-primary w-100 p-2 h-100 shadow-white">
-                <h5 className="text-center text-white tesla-font">BACKEND DEVELOPMENT</h5>
-                 <hr style={{
-    width: '200px',
-    height: '3px',
-    backgroundColor: 'white',
-    margin: '10px auto',
-    border: 'none',
-    borderRadius: '4px'
-  }} />
-                <p className="text-white p-3 text-center mt-5 tesla-font" data-aos="zoom-out">
-                  Your backend will be built with <strong>Django</strong>, one of the most powerful and secure Python-based web frameworks. Hosted on trusted cloud platforms like <strong>AWS</strong>.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Cybersecurity Section */}
-          <div className="row pb-3 mt-4 ">
-            <div className="col-sm-6 rounded-4 bg-transparent border border-dark p-3 shadow-white" data-aos="zoom-out">
-              <div className="rounded-4 border-1 border-primary w-100 h-100 p-2 shadow-white">
-                <h5 className="text-center text-white tesla-font">CYBER SECURITY & PENETRATION TESTING</h5>
-                 <hr style={{
-    width: '200px',
-    height: '3px',
-    backgroundColor: 'white',
-    margin: '10px auto',
-    border: 'none',
-    borderRadius: '4px'
-  }} />
-                <p className="text-white p-3 text-center tesla-font" data-aos="zoom-out">
-                  I specialize in <strong>penetration testing, vulnerability assessment, reconnaissance</strong> and building <strong>OSINT dashboards</strong>. Tools I use include <strong>Nmap, Burp Suite, SQLMap, theHarvester, Shodan</strong>, and more. Your digital assets will be thoroughly tested and hardened.
-                </p>
-              </div>
-            </div>
-            <div className="col-sm-6 rounded-4 bg-transparent border border-dark p-3 shadow-white" data-aos="zoom-out">
-              <img className="rounded-4 border-1 border-primary w-100 h-100"
-                src={cyberGif} alt="Hacker GIF" />
-            </div>
-          </div>
-
+        <div className="text-center mb-5" data-aos="fade-down">
+          <h2 style={{ letterSpacing: "4px" }}>⚡ WHAT I CAN DO</h2>
+          <div style={{
+            width: "140px",
+            height: "2px",
+            background: "white",
+            margin: "10px auto",
+            opacity: 0.5
+          }} />
         </div>
-      </center>
+
+        <Card
+          title="🎨 FRONTEND DEVELOPMENT"
+          desc="Modern UI using HTML, CSS, Tailwind, Bootstrap & React."
+          img={front}
+        />
+
+        <Card
+          title="⚙️ BACKEND DEVELOPMENT"
+          desc="Secure backend using Django & FastAPI with cloud deployment."
+          img={back}
+          reverse
+        />
+
+        <Card
+          title="🛡️ CYBER SECURITY"
+          desc="Pentesting, OSINT & vulnerability assessment using pro tools."
+          img={cyberGif}
+        />
+
+      </div>
     </>
   );
-}
+};
 
 export default About;

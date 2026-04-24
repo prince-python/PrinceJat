@@ -1,206 +1,178 @@
-import React from 'react';
+import React, { useRef, useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Projects = () => {
+
+  const [activeProject, setActiveProject] = useState(null);
+
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+  const projects = [{ icon: "🎉", name: "Thematic Events", desc: "Event management website for booking, showcasing events & handling client inquiries.", tech: ["React", "UI/UX"], link: "https://thematicevents.com/" }, { icon: "👓", name: "Pooja Glasses", desc: "Business website for eyewear, frames, sunglasses, bras & decorative products.", tech: ["Frontend", "Business"], link: "https://poojaglasses.com/" }, { icon: "🏟️", name: "Indore Venue", desc: "Venue booking platform for weddings, parties & corporate events.", tech: ["Web", "Booking"], link: "http://indorevenue.com/" }, { icon: "🎧", name: "Sound Beats", desc: "Music-based UI project with modern design and animations.", tech: ["React"], link: "https://thematicevents.github.io/Sound-Beats/" }, { icon: "🏨", name: "Shri Anandam", desc: "Hotel website with premium UI and booking experience.", tech: ["React"], link: "https://thematicevents.github.io/Shri-Anandam/" }, { icon: "🛡️", name: "KaalCyberSec", desc: "Cybersecurity brand showcasing tools, services & solutions.", tech: ["React", "Security"], link: "https://kaal-1-commit.github.io/KaalCyberSec/" }, { icon: "🎲", name: "Fake Data Generator", desc: "Generate fake data using Django + Faker for testing.", tech: ["Django", "Python"], link: "https://dark-fake.vercel.app/" }, { icon: "🌦️", name: "Weather App", desc: "Live weather forecast app Django using API integration.", tech: ["Django", "API"], link: "https://live-wether-app-using-django-plaj.vercel.app/" }, { icon: "✍️", name: "Text Modder", desc: "React-based text utility for formatting and transformations.", tech: ["React"], link: "https://prince-python.github.io/TEXT-Modder/" }];
+  const handleMouseMove = (e, ref) => {
+    const rect = ref.current.getBoundingClientRect();
+    ref.current.style.setProperty("--x", `${e.clientX - rect.left}px`);
+    ref.current.style.setProperty("--y", `${e.clientY - rect.top}px`);
+  };
+
+  const Card = ({ proj, index }) => {
+    const ref = useRef(null);
+
+    return (
+      <div
+        className="col-md-4 mb-4"
+        data-aos="fade-up"
+        data-aos-delay={index * 100}
+      >
+        <div
+          ref={ref}
+          className="glow-card text-center"
+          onMouseMove={(e) => handleMouseMove(e, ref)}
+          onClick={() => setActiveProject(proj)}
+        >
+          <div style={{ fontSize: "26px" }}>{proj.icon}</div>
+          <h5>{proj.name}</h5>
+          <p>{proj.desc}</p>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <>
-      {/* Tesla Font */}
-      <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
-
       <style>{`
-        .tesla-font {
-          font-family: 'Orbitron', sans-serif;
+
+        body {
+          background: black;
         }
-        .tag {
-          display: inline-block;
-          background-color: #111;
-          color: #fff;
-          padding: 2px 8px;
-          margin: 2px;
-          border-radius: 4px;
-          font-size: 12px;
+
+        /* 🌌 CYBER GRID */
+        .cyber-bg {
+          position: fixed;
+          inset: 0;
+          background: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+          background-size: 40px 40px;
+          z-index: -1;
+          animation: moveGrid 20s linear infinite;
         }
-        .shadow-white {
-          box-shadow: 0px 0px 10px white;
+
+        @keyframes moveGrid {
+          from { background-position: 0 0; }
+          to { background-position: 100px 100px; }
         }
+
+        .glow-card {
+          position: relative;
+          background: #000;
+          border-radius: 18px;
+          padding: 25px;
+          border: 1px solid rgba(255,255,255,0.2);
+          box-shadow: 0 0 12px rgba(255,255,255,0.25);
+          cursor: pointer;
+          transition: 0.3s;
+        }
+
+        .glow-card::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          border-radius: 18px;
+          animation: pulse 3s infinite;
+        }
+
+        @keyframes pulse {
+          0% { box-shadow: 0 0 10px rgba(255,255,255,0.1); }
+          50% { box-shadow: 0 0 25px rgba(255,255,255,0.4); }
+          100% { box-shadow: 0 0 10px rgba(255,255,255,0.1); }
+        }
+
+        .glow-card::after {
+          content: "";
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          background: radial-gradient(circle, rgba(255,255,255,0.4), transparent);
+          top: calc(var(--y) - 100px);
+          left: calc(var(--x) - 100px);
+          opacity: 0;
+          transition: 0.3s;
+        }
+
+        .glow-card:hover::after {
+          opacity: 1;
+        }
+
+        .glow-card:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 0 30px white;
+        }
+
+        /* 🔥 MODAL */
+        .modal-bg {
+          position: fixed;
+          inset: 0;
+          background: rgba(0,0,0,0.9);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 999;
+          color : white;
+        }
+
+        .modal-box {
+          background: black;
+          padding: 30px;
+          border-radius: 16px;
+          box-shadow: 0 0 20px white;
+          max-width: 400px;
+          text-align: center;
+        }
+
       `}</style>
 
-      <center>
-        <div className='p-4 container-fluid bg-transparent rounded-4 w-75' id="project">
-          <div className='container-fluid p-4 bg-transparent rounded-4 mb-5 shadow-white'>
-            <span data-aos="zoom-out-left" className='text-white bg-transparent tesla-font'>P R O J E C T S</span>
-             <hr style={{
-    width: '200px',
-    height: '3px',
-    backgroundColor: 'white',
-    margin: '10px auto',
-    border: 'none',
-    borderRadius: '4px'
-  }} />
-          </div>
+      <div className="cyber-bg"></div>
 
-          {/* Updated Featured Projects */}
-          <div className="row">
-            <div className="col-sm-6 bg-transparent p-4 rounded-4 border border-dark shadow-white" data-aos="zoom-out">
-              <h4 className="text-white tesla-font">God's Eye - OSINT Dashboard</h4>
-               <hr style={{
-    width: '200px',
-    height: '3px',
-    backgroundColor: 'white',
-    margin: '10px auto',
-    border: 'none',
-    borderRadius: '4px'
-  }} />
-              <p className="text-white">Open-source OSINT tool for gathering info from usernames, emails, domains using APIs.</p>
-              <div><span className='tag'>Python</span><span className='tag'>Django</span><span className='tag'>OSINT</span></div>
-              <a className='btn btn-outline-light mt-2' href="https://github.com/prince-python/Gods_Eye">View Repo</a>
-            </div>
+      <div className="container py-5 text-white">
 
-            <div className="col-sm-6 bg-transparent p-4 rounded-4 border border-dark shadow-white" data-aos="zoom-out">
-              <h4 className="text-white tesla-font">Text Utilities - React</h4>
-               <hr style={{
-    width: '200px',
-    height: '3px',
-    backgroundColor: 'white',
-    margin: '10px auto',
-    border: 'none',
-    borderRadius: '4px'
-  }} />
-              <p className="text-white">Live React app to transform and clean text. Offers case change, trimming, and more.</p>
-              <div><span className='tag'>React</span><span className='tag'>JSX</span><span className='tag'>Utilities</span></div>
-              <a className='btn btn-outline-light mt-2' href="https://github.com/prince-python/TEXT-UTILITIES-AND-MODIFIER-APP-USING-REACT">View Repo</a>
-            </div>
-          </div>
-
-          <div className="row mt-4">
-            <div className="col-sm-6 bg-transparent p-4 rounded-4 border border-dark shadow-white" data-aos="zoom-out">
-              <h4 className="text-white tesla-font">School ERP Panel</h4>
-               <hr style={{
-    width: '200px',
-    height: '3px',
-    backgroundColor: 'white',
-    margin: '10px auto',
-    border: 'none',
-    borderRadius: '4px'
-  }} />
-              <p className="text-white">Complete ERP system to manage school, staff, students, and academic modules.</p>
-              <div><span className='tag'>Django</span><span className='tag'>ERP</span><span className='tag'>Admin</span></div>
-              <a className='btn btn-outline-light mt-2' href="https://github.com/prince-python/SCHOOL-MANAGEMENT--PANEL">View Repo</a>
-            </div>
-
-            <div className="col-sm-6 bg-transparent p-4 rounded-4 border border-dark shadow-white" data-aos="zoom-out">
-              <h4 className="text-white tesla-font">Tea Ecommerce Website</h4>
-               <hr style={{
-    width: '200px',
-    height: '3px',
-    backgroundColor: 'white',
-    margin: '10px auto',
-    border: 'none',
-    borderRadius: '4px'
-  }} />
-              <p className="text-white">Frontend-only tea shop website with elegant layout and shopping flow.</p>
-              <div><span className='tag'>HTML</span><span className='tag'>CSS</span><span className='tag'>UI/UX</span></div>
-              <a className='btn btn-outline-light mt-2' href="https://github.com/prince-python/Higarden-tea-ecommerce-website-">View Repo</a>
-            </div>
-          </div>
-
-          <div className="row mt-4">
-            <div className="col-sm-6 bg-transparent p-4 rounded-4 border border-dark shadow-white" data-aos="zoom-out">
-              <h4 className="text-white tesla-font">Fake Data Generator</h4>
-               <hr style={{
-    width: '200px',
-    height: '3px',
-    backgroundColor: 'white',
-    margin: '10px auto',
-    border: 'none',
-    borderRadius: '4px'
-  }} />
-              <p className="text-white">Generate fake user records with Django faker library and export data.</p>
-              <div><span className='tag'>Python</span><span className='tag'>Django</span><span className='tag'>Faker</span></div>
-              <a className='btn btn-outline-light mt-2' href="https://github.com/prince-python">View Repo</a>
-            </div>
-
-            <div className="col-sm-6 bg-transparent p-4 rounded-4 border border-dark shadow-white" data-aos="zoom-out">
-              <h4 className="text-white tesla-font">Live Weather App</h4>
-               <hr style={{
-    width: '200px',
-    height: '3px',
-    backgroundColor: 'white',
-    margin: '10px auto',
-    border: 'none',
-    borderRadius: '4px'
-  }} />
-              <p className="text-white">Weather forecast app using Django and weather API integration.</p>
-              <div><span className='tag'>Django</span><span className='tag'>API</span><span className='tag'>Weather</span></div>
-              <a className='btn btn-outline-light mt-2' href="https://github.com/prince-python">View Repo</a>
-            </div>
-          </div>
-
-          <div className="row mt-4">
-            <div className="col-sm-6 bg-transparent p-4 rounded-4 border border-dark shadow-white" data-aos="zoom-out">
-              <h4 className="text-white tesla-font">API for College</h4>
-               <hr style={{
-    width: '200px',
-    height: '3px',
-    backgroundColor: 'white',
-    margin: '10px auto',
-    border: 'none',
-    borderRadius: '4px'
-  }} />
-              <p className="text-white">REST API for managing college data like students and faculty.</p>
-              <div><span className='tag'>DRF</span><span className='tag'>API</span><span className='tag'>Backend</span></div>
-              <a className='btn btn-outline-light mt-2' href="https://github.com/prince-python/API-FOR-COLLEGE-USING-DRF">View Repo</a>
-            </div>
-
-            <div className="col-sm-6 bg-transparent p-4 rounded-4 border border-dark shadow-white" data-aos="zoom-out">
-              <h4 className="text-white tesla-font">Basic CRUD Django App</h4>
-               <hr style={{
-    width: '200px',
-    height: '3px',
-    backgroundColor: 'white',
-    margin: '10px auto',
-    border: 'none',
-    borderRadius: '4px'
-  }} />
-              <p className="text-white">Simple CRUD web app for performing create, read, update, and delete.</p>
-              <div><span className='tag'>Django</span><span className='tag'>CRUD</span><span className='tag'>Forms</span></div>
-              <a className='btn btn-outline-light mt-2' href="https://github.com/prince-python/crud_application">View Repo</a>
-            </div>
-          </div>
+        <div className="text-center mb-5" data-aos="fade-down">
+          <h2>🚀 LIVE PROJECTS</h2>
         </div>
 
-        {/* LIVE PROJECTS */}
-        <div className='p-1 container-fluid bg-transparent rounded-4 w-75' id="about">
-          <div className='container-fluid p-4 bg-transparent rounded rounded-4 mb-2 mt-5 shadow-white' data-aos="fade-down">
-            <span data-aos="zoom-out-left" className='text-white tesla-font'>LIVE PROJECTS</span>
-             <hr style={{
-    width: '200px',
-    height: '3px',
-    backgroundColor: 'white',
-    margin: '10px auto',
-    border: 'none',
-    borderRadius: '4px'
-  }} />
-          </div>
+        <div className="row">
+          {projects.map((proj, i) => (
+            <Card key={i} proj={proj} index={i} />
+          ))}
+        </div>
 
-          <div className="row bg-transparent p-5">
-            <div className="col-sm-12 rounded-4 bg-transparent border border-dark mt-2 mb-2 p-3 shadow-white" data-aos="zoom-out">
-              <a href="https://dark-fake.vercel.app/" className='btn btn-outline-light tesla-font'>FAKE DATA GENERATOR DJANGO</a>
-            </div>
-            <div className="col-sm-12 rounded-4 bg-transparent border border-dark p-3 mt-2 mb-2 shadow-white" data-aos="zoom-out">
-              <a href="https://live-wether-app-using-django-plaj.vercel.app/" className=' btn btn-outline-light tesla-font'>LIVE WEATHER APP DJANGO</a>
-            </div>
-            <div className="col-sm-12 rounded-4 bg-transparent border border-dark p-3 mt-2 mb-2 shadow-white" data-aos="zoom-out">
-              <a href=" https://prince-python.github.io/TEXT-Modder/" className=' btn btn-outline-light tesla-font'>TEXT UTILITY REACT</a>
-            </div>
-            <div className="col-sm-12 rounded-4 bg-transparent border border-dark p-3 mt-2 mb-2 shadow-white" data-aos="zoom-out">
-              <a href=" https://princejathere.000webhostapp.com/calculator.php" className=' btn btn-outline-light tesla-font'>CALCULATOR</a>
-            </div>
-            <div className="col-sm-12 rounded-4 bg-transparent border border-dark p-3 mt-2 mb-2 shadow-white" data-aos="zoom-out">
-              <a href="https://github.com/prince-python" className=' btn btn-outline-light tesla-font'>GITHUB</a>
-            </div>
+      </div>
+
+      {/* MODAL */}
+      {activeProject && (
+        <div className="modal-bg" onClick={() => setActiveProject(null)}>
+          <div className="modal-box" onClick={(e) => e.stopPropagation()}>
+            <h4>{activeProject.name}</h4>
+            <p>{activeProject.details}</p>
+
+            <a
+              href={activeProject.link}
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "white", borderBottom: "1px solid white" }}
+            >
+              🔗 Visit Project
+            </a>
+
+            <br /><br />
+
+            <button onClick={() => setActiveProject(null)}>
+              Close
+            </button>
           </div>
         </div>
-      </center>
+      )}
+
     </>
   );
 };
