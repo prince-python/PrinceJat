@@ -11,6 +11,7 @@ import { useEffect, useState } from 'react';
 import Loading from './components/Loading';
 import './App.css';
 import Kalli from './components/Kali'
+import FAQ from './components/Faq';
 
 
 
@@ -39,9 +40,11 @@ const App = () => {
       <Projects/>
       <Section/>
       <Kalli/>
-  
+        
       <Connect/>
+      
       <Contact/>
+      <FAQ/>
  
       </div>
       </>}</div>

@@ -112,40 +112,52 @@ const About = () => {
         }
 
       `}</style>
+<div className="container py-5 text-white" id="about">
 
-      <div className="container py-5 text-white" id="about">
+  {/* Heading */}
+  <div className="text-center mb-5" data-aos="fade-down">
+    <h2 style={{
+      letterSpacing: "4px",
+      fontWeight: "700",
+      textTransform: "uppercase"
+    }}>
+      ⚡ What I Do
+    </h2>
 
-        <div className="text-center mb-5" data-aos="fade-down">
-          <h2 style={{ letterSpacing: "4px" }}>⚡ WHAT I CAN DO</h2>
-          <div style={{
-            width: "140px",
-            height: "2px",
-            background: "white",
-            margin: "10px auto",
-            opacity: 0.5
-          }} />
-        </div>
+    <p style={{ opacity: 0.7, maxWidth: "600px", margin: "10px auto" }}>
+      I am <b>Prince Chaudhary</b>, Founder of <span style={{ color: "#00ff99" }}>KaalCyberSec</span> —
+      building secure systems, modern applications & advanced cyber solutions.
+    </p>
 
-        <Card
-          title="🎨 FRONTEND DEVELOPMENT"
-          desc="Modern UI using HTML, CSS, Tailwind, Bootstrap & React."
-          img={front}
-        />
+    <div style={{
+      width: "140px",
+      height: "2px",
+      background: "linear-gradient(90deg, transparent, #00ff99, transparent)",
+      margin: "15px auto",
+    }} />
+  </div>
 
-        <Card
-          title="⚙️ BACKEND DEVELOPMENT"
-          desc="Secure backend using Django & FastAPI with cloud deployment."
-          img={back}
-          reverse
-        />
+  {/* Cards */}
+  <Card
+    title="🎨 FRONTEND DEVELOPMENT"
+    desc="Crafting high-performance, responsive and modern UI using React, Tailwind & advanced animations for premium user experience."
+    img={front}
+  />
 
-        <Card
-          title="🛡️ CYBER SECURITY"
-          desc="Pentesting, OSINT & vulnerability assessment using pro tools."
-          img={cyberGif}
-        />
+  <Card
+    title="⚙️ BACKEND DEVELOPMENT"
+    desc="Building scalable and secure backend systems using Django, FastAPI, REST APIs with optimized database and cloud deployment."
+    img={back}
+    reverse
+  />
 
-      </div>
+  <Card
+    title="🛡️ CYBER SECURITY"
+    desc="Performing penetration testing, OSINT investigations and vulnerability assessments using real-world hacking methodologies."
+    img={cyberGif}
+  />
+
+</div>
     </>
   );
 };
